@@ -15,7 +15,6 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
-		9E99C51503CE1FC896047CEA /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		E84E0BDE274EAB0500BFA3EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		E84E0BDF274EAB0500BFA3EE /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		E84E0BE3274EAB0500BFA3EE /* config in Resources */ = {isa = PBXBuildFile; fileRef = E8E552F8274EA56300A64B9E /* config */; };
@@ -23,7 +22,6 @@
 		E84E0BE5274EAB0500BFA3EE /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		E84E0BE6274EAB0500BFA3EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		E84E0BE7274EAB0500BFA3EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
-		E84E0C02274EAC0E00BFA3EE /* beta in Resources */ = {isa = PBXBuildFile; fileRef = E84E0C01274EAC0E00BFA3EE /* beta */; };
 		E8E552F9274EA56300A64B9E /* config in Resources */ = {isa = PBXBuildFile; fileRef = E8E552F8274EA56300A64B9E /* config */; };
 		E8E552FE274EA5A900A64B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		E8E552FF274EA5A900A64B9E /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
@@ -32,7 +30,6 @@
 		E8E55305274EA5A900A64B9E /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		E8E55306274EA5A900A64B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		E8E55307274EA5A900A64B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
-		E8E55315274EA68500A64B9E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8E55314274EA68500A64B9E /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -282,6 +279,7 @@
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				B70D76E158064FBBC6F6744E /* [CP] Embed Pods Frameworks */,
 				E8E5531F274EA74D00A64B9E /* Copy Google-service files to resource */,
+				E3E3184EF1EA4989733721BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -376,11 +374,9 @@
 			files = (
 				E8E552F9274EA56300A64B9E /* config in Resources */,
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
-				E8E55315274EA68500A64B9E /* Info.plist in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
-				E84E0C02274EAC0E00BFA3EE /* beta in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +472,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3E3184EF1EA4989733721BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E84E0BDC274EAB0500BFA3EE /* Run Script */ = {
